@@ -18,7 +18,7 @@ const SEPOLIA_RPC_URL =
     process.env.SEPOLIA_RPC_URL || "https://eth-sepolia.g.alchemy.com/v2/YOUR-API-KEY"
 // const POLYGON_MAINNET_RPC_URL =
 //     process.env.POLYGON_MAINNET_RPC_URL || "https://polygon-mainnet.alchemyapi.io/v2/your-api-key"
-// const PRIVATE_KEY = process.env.PRIVATE_KEY
+const PRIVATE_KEY = process.env.PRIVATE_KEY
 // // optional
 // const MNEMONIC = process.env.MNEMONIC || "your mnemonic"
 
@@ -42,7 +42,7 @@ module.exports = {
         },
         sepolia: {
             url: SEPOLIA_RPC_URL,
-            // accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
+            accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
             //accounts: {
             //     mnemonic: MNEMONIC,
             // },
